@@ -4,7 +4,7 @@
 
 ##### Functions
 
-new_user()
+new_user()						##Create normal user
 {
 	echo "What is the username?"
 	read username
@@ -17,7 +17,7 @@ new_user()
 }
 
 
-new_admin()
+new_admin()						##Create a user account with sudo rights
 {
 	echo "What is the username?"
 	read username
@@ -29,7 +29,7 @@ new_admin()
 	clear
 }
 
-new_guest()
+new_guest()						##Create a user account withour sudo rights or password
 {
 	echo "What is the username?"
 	read username
@@ -42,7 +42,7 @@ new_guest()
 	
 }
 
-check_user()
+check_user()					##Function to check useraccounts on the server
 {
 	echo "#####USERS#####"
 	echo ""
@@ -52,7 +52,7 @@ check_user()
 	clear
 }
 
-change_passwd()
+change_passwd()					##Function to change the password of the user
 {
 	echo "#####USERS#####"
 	echo ""
@@ -68,7 +68,7 @@ change_passwd()
 }
 	
 
-delete_user()
+delete_user()					##Delete users, and select if you want to remove or keep their files
 {
 	echo -e "\e[31m
 	###############
@@ -128,11 +128,14 @@ delete_user()
 welcome="\e[1;4;5mWelcome to the user control interface\e[0m"
 
 clear
+
+###Home menu
+
 while true; do 
 	read -p $"
 ###########################################
 ###$(echo -e "$welcome")###
-###########################################
+############_Made by Dimitri-dW_###########
 
 
 
