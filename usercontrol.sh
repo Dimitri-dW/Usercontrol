@@ -124,12 +124,12 @@ delete_user()					##Delete users, and select if you want to remove or keep their
 	fi
        	
 }
+###Home menu
 
 welcome="\e[1;4;5mWelcome to the user control interface\e[0m"
 
 clear
 
-###Home menu
 
 while true; do 
 	read -p $"
